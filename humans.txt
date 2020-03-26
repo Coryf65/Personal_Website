@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Cory Fabian -- Software Engineer -- @_CoryDev
 
 # THANKS
 
