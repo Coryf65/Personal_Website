@@ -18,6 +18,7 @@ body {
     display: table-cell;
     vertical-align: middle;
     margin: 2em auto;
+    overflow: hidden; /* hiding the extra parts of the city image */
 }
 
 h1 {
@@ -29,6 +30,21 @@ h1 {
 p {
     margin: 0 auto;
     width: 280px;
+}
+
+#Info-text {
+    position: absolute;
+    z-index: 20;
+    padding: 50% 50%;
+}
+
+#City-Background img {
+    position: sticky;
+    z-index: -1;
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 100vh;
 }
 
 @media only screen and (max-width: 280px) {
