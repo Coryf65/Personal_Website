@@ -1,15 +1,18 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
+# The humans responsible & technology info
 
 # TEAM
 
-    Cory Fabian -- Software Engineer -- @_CoryDev
+    Author: Cory Fabian -- Software Engineer
+    Twitter: @_CoryDev
+    Location: WI
 
 # THANKS
 
     <name>
 
-# TECHNOLOGY COLOPHON
+# TECHNOLOGY INFO
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Standards: HTML5, CSS3, Javascript
+    Components: Apache Server, jQuery, Modernizr, Normalize.css
+    Software: VS Code
