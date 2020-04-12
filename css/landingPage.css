@@ -35,7 +35,13 @@ p {
 #Info-text {
     position: absolute;
     z-index: 20;
-    padding: 50% 50%;
+    margin: 20% 45%;
+    padding: 20px 10px 5px 10px;
+    width: 500px;
+    height: 100px;
+    background: rgba(252, 252, 252, 0.8);
+    border: rgb(26, 26, 26) solid 2px;
+    border-radius: 9px;
 }
 
 #City-Background img {
@@ -46,6 +52,26 @@ p {
     width: 100vw;
     height: 100vh;
 }
+
+/* Clouds */
+#Cloud1 {
+    width: 900px;
+    height: 320px;
+    position: absolute;
+    left: 0px;
+    top: 320px;
+    z-index: 10;
+}
+
+#Cloud2 {
+    width: 2000px;
+    height: 600px;
+    position: absolute;
+    left: -1000px;
+    top: 0px;
+    z-index: 1;
+}
+
 
 @media only screen and (max-width: 280px) {
 
