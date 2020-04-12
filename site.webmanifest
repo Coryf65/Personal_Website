@@ -1,12 +1,8 @@
 {
-  "short_name": "",
-  "name": "",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "name": "Cory's Development Portfolio",
+  "short_name": "coryf.dev",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "grey",
+  "description": "Cory's Personal Developer Portfolio site. Showcase myself as a Programmer / Developer."
 }
