@@ -3,6 +3,12 @@
 
 ## Tech Using
 
+- HTML
+
+- CSS
+
+- Javascript
+
 - JQuery
 
 - Modernizer
