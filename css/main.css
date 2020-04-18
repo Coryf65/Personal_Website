@@ -1,13 +1,30 @@
 /* My Main Css File */
 
+/* CSS Vars */
+:root {
+  --bg-color-nav: rgb(44, 54, 61);
+  --bg-color-main: rgb(31, 35, 39);
+
+  --test-color2: rgb(94, 183, 255);
+  --test-color3: rgb(171, 217, 255);
+  --test-color4: rgb(47, 91, 128);
+  --test-color5: rgb(137, 174, 204);
+}
+ 
+
 #NavBar {
   width: 5%;
   height: 100%;
-  background-color: rgb(61, 61, 61);
+  background-color: var(--bg-color-nav);
   position: absolute;
   top: 0;
   z-index: 3;
   min-height: 500px;
+}
+
+.logo {
+  width: fit-content;
+  height: fit-content;
 }
 
 #main {
@@ -15,5 +32,5 @@
   width: 95%;
   height: 100%;
   position: absolute;
-  background-color: rgb(209, 128, 128);
+  background-color: var(--bg-color-main);
 }
