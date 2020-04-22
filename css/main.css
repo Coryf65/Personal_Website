@@ -1,5 +1,11 @@
 /* My Main Css File */
 
+/* Icon Fonts */
+@font-face {
+  font-family: icomoon;
+  src: url(/fonts/IcoMoon-Free.ttf);
+}
+
 /* CSS Vars */
 :root {
   --bg-color-nav: rgb(44, 54, 61);
@@ -14,7 +20,7 @@
 /*transition: width 2s, height 2s, transform 2s;*/
 
 #NavBar {
-  width: 3%;
+  width: 60px;
   height: 100%;
   background-color: var(--bg-color-nav);
   background-image: linear-gradient(var(--bg-color-nav-top), var(--bg-color-nav));
@@ -22,6 +28,7 @@
   top: 0;
   z-index: 3;
   min-height: 500px;
+  margin-right: 60px;
 }
 
 .logo img {
@@ -38,9 +45,8 @@
 }
 
 #main {
-  padding-left: 3%;
-  width: 97%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   background-color: var(--bg-color-main);
 }
@@ -53,13 +59,20 @@
 }
 
 .icon {
-  width: 100%;
-  height: fit-content;
-  padding: 2%;
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-home {
   color: aquamarine;
 }
+
 
 
