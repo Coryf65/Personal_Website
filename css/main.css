@@ -3,7 +3,7 @@
 /* Icon Fonts */
 @font-face {
   font-family: icomoon;
-  src: url(/fonts/IcoMoon-Free.ttf);
+  src: url(../fonts/IcoMoon-Free.ttf);
 }
 
 /* CSS Vars */
@@ -11,10 +11,12 @@
   --bg-color-nav: rgb(44, 54, 61);
   --bg-color-main: rgb(31, 35, 39);
   --bg-color-nav-top: rgb(171, 217, 255);
-
-  --test-color2: rgb(61, 126, 180);
-  --test-color4: rgb(47, 91, 128);
-  --test-color5: rgb(137, 174, 204);
+  --icon-color-main: rgb(62, 139, 202);
+  --icon-color-transis: rgb(0, 255, 234);
+  
+  --test-color1: rgb(47, 91, 128);
+  --test-color2: rgb(137, 174, 204);
+  --test-color3: rgb(8, 34, 56);
 }
 
 /*transition: width 2s, height 2s, transform 2s;*/
@@ -23,7 +25,7 @@
   width: 60px;
   height: 100%;
   background-color: var(--bg-color-nav);
-  background-image: linear-gradient(var(--bg-color-nav-top), var(--bg-color-nav));
+  background-image: linear-gradient(var(--bg-color-nav), var(--bg-color-nav));
   position: absolute;
   top: 0;
   z-index: 3;
@@ -32,6 +34,7 @@
 }
 
 .logo img {
+  background-color: var(--bg-color-nav-top);
   padding: 0;
   margin: 0;
   width: 100%;
@@ -54,25 +57,23 @@
 .nav-links {
   display: block;
   padding-top: 400px;
-  width: 100%;
+  width: 50%;
   height: 100px;
+  margin: auto;
 }
 
 .icon {
-  font-family: 'icomoon' !important;
+  font-family: 'icomoon';
+  font-size: 1.8rem;
   font-style: normal;
-  font-size: 20px;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+  display: inline-block;
+  padding: 20px 0 0 0;
+  color: var(--icon-color-main);
+  
+  transition: color .5s ease-in-out;
 }
 
-.icon-home {
-  color: aquamarine;
-}
-
-
-
+  .icon:hover {
+    color: var(--icon-color-transis);
+  }
