@@ -1,0 +1,6 @@
+# Editor settings
+*.vscode
+*.editorconfig
+
+package-lock.json
+
