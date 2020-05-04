@@ -12,7 +12,7 @@
   --bg-color-main: rgb(31, 35, 39);
   --bg-color-nav-top: rgb(171, 217, 255);
   --icon-color-main: rgb(62, 139, 202);
-  --icon-color-transis: rgb(0, 255, 234);
+  --icon-color-transis: rgb(0, 255, 136);
   
   --test-color1: rgb(47, 91, 128);
   --test-color2: rgb(137, 174, 204);
@@ -34,7 +34,7 @@
 
 .logo img {
   background-color: var(--bg-color-nav-top);
-  padding: 0;
+  padding: 5px;
   margin: 0;
   width: 100%;
     width: -moz-available;          /* WebKit-based browsers will ignore this. */
@@ -56,7 +56,7 @@
 
 .icon {
   font-family: 'icomoon';
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-style: normal;
   font-kerning: auto;
   display: inline-block;
@@ -65,7 +65,6 @@
   
   transition: color .5s ease-in-out;
 }
-
   .icon:hover {
     color: var(--icon-color-transis);
   }
@@ -88,4 +87,8 @@
 
 #home {
   margin: 45% 0 0 50px;
+}
+
+span .wiggle {
+  
 }
