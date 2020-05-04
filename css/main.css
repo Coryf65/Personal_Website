@@ -19,7 +19,7 @@
   --test-color3: rgb(8, 34, 56);
 }
 
-/*transition: width 2s, height 2s, transform 2s;*/
+/* Main Page looks */
 
 #NavBar {
   width: 60px;
@@ -28,7 +28,6 @@
   background-image: linear-gradient(var(--bg-color-nav), var(--bg-color-nav));
   position: absolute;
   top: 0;
-  z-index: 3;
   min-height: 500px;
   margin-right: 60px;
 }
@@ -45,13 +44,6 @@
     height: -moz-available;
     height: -webkit-fill-available;
     height: fill-available;
-}
-
-#main {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-color: var(--bg-color-main);
 }
 
 .nav-links {
@@ -77,3 +69,23 @@
   .icon:hover {
     color: var(--icon-color-transis);
   }
+
+#main {
+  position: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  color: #fff;
+  margin: 0 0 0 60px;
+  height: 100%;
+  background-color: var(--bg-color-main);
+}
+
+/* Home Page */
+
+#home {
+  margin: 45% 0 0 50px;
+}
