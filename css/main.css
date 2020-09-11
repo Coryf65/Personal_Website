@@ -86,9 +86,10 @@
 /* Home Page */
 
 #home {
-  margin: 45% 0 0 50px;
+  margin: 33% 0 0 50px;
+  font-size: 1.4rem;
 }
 
-span .wiggle {
-  
+.italics {
+  font-style: italic;
 }
