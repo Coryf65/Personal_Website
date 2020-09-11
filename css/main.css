@@ -86,10 +86,45 @@
 /* Home Page */
 
 #home {
-  margin: 33% 0 0 50px;
+  height: 0;
+  margin: 450px 0 0 50px;
   font-size: 1.4rem;
+}
+
+#pic {
+  margin-left: 50%;;
 }
 
 .italics {
   font-style: italic;
 }
+
+.me {
+  width: 500px;
+  height: 387px;
+  border-radius: 50%;
+}
+
+.center {
+  position: relative;
+  top: 35%;
+  width: 100%;
+  left: 60%;
+  text-align: center;
+}
+
+/*https://www.w3schools.com/css/css3_transitions.asp*/
+.jiggle {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-height: 90%;
+  transition: width 2s linear 1s;
+}
+
+  .jiggle:hover {
+    will-change: transform;
+      opacity: 0;
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out
+  }
