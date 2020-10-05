@@ -13,7 +13,8 @@
   --bg-color-nav-top: rgb(171, 217, 255);
   --icon-color-main: rgb(62, 139, 202);
   --icon-color-transis: rgb(0, 255, 136);
-  
+  --box-color: rgb(104, 142, 175);
+
   --test-color1: rgb(47, 91, 128);
   --test-color2: rgb(137, 174, 204);
   --test-color3: rgb(8, 34, 56);
@@ -136,4 +137,24 @@
   padding: 10% 0 20% 35%;
   padding: auto;
   background-color: var(--test-color2);
+}
+
+#About {
+  padding: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+#Languages {
+  display: inline-block;
+  background-color: var(--box-color);
+  padding: 20px;
+  margin: 0;
+}
+
+#Tools {
+  display: inline-block;
+  background-color: var(--box-color);
+  padding: 20px;
+  padding-top: calc(100%);
 }
