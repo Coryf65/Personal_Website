@@ -128,3 +128,12 @@
       -webkit-transition: all .3s ease-out;
       transition: all .3s ease-out
   }
+
+/* Conact Page */
+
+#Contact {
+  margin: 0;
+  padding: 10% 0 20% 35%;
+  padding: auto;
+  background-color: var(--test-color2);
+}
