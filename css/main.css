@@ -20,6 +20,14 @@
   --test-color3: rgb(8, 34, 56);
 }
 
+html, body {
+  color: #fff;
+  margin: 0;
+  padding: 0;  
+  height: 100%;
+  background-color: var(--bg-color-main);
+}
+
 /* Main Page looks */
 
 #NavBar {
@@ -35,16 +43,13 @@
 
 .logo img {
   background-color: var(--bg-color-nav-top);
-  padding: 5px;
-  margin: 0;
-  width: 100%;
-    width: -moz-available;          /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
   height: 100%;
-    height: -moz-available;
-    height: -webkit-fill-available;
-    height: fill-available;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: fill-available;
 }
 
 .nav-links {
@@ -61,34 +66,19 @@
   font-style: normal;
   font-kerning: auto;
   display: inline-block;
-  padding: 20px 0 0 0;
-  color: var(--icon-color-main);
-  
+  padding: 20px 0 0 0;  
   transition: color .5s ease-in-out;
 }
   .icon:hover {
     color: var(--icon-color-transis);
   }
 
-#main {
-  position: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 
-  color: #fff;
-  margin: 0 0 0 60px;
-  height: 100%;
-  background-color: var(--bg-color-main);
-}
 
 /* Home Page */
 
 #home {
   height: 0;
-  margin: 400px 0 0 90px;
   font-size: 1.4rem;
 }
 
@@ -142,19 +132,18 @@
 #About {
   padding: auto;
   margin: auto;
-  overflow: hidden;
 }
 
 #Languages {
-  display: inline-block;
   background-color: var(--box-color);
   padding: 20px;
-  margin: 0;
 }
 
 #Tools {
-  display: inline-block;
   background-color: var(--box-color);
   padding: 20px;
-  padding-top: calc(100%);
+}
+
+.container {
+  display: block;
 }
