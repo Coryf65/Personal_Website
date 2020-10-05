@@ -14,10 +14,10 @@
   --icon-color-main: rgb(62, 139, 202);
   --icon-color-transis: rgb(0, 255, 136);
   --box-color: rgb(104, 142, 175);
+  --darkBlue-text: rgb(8, 34, 56);
 
   --test-color1: rgb(47, 91, 128);
   --test-color2: rgb(137, 174, 204);
-  --test-color3: rgb(8, 34, 56);
 }
 
 html, body {
@@ -82,10 +82,6 @@ html, body {
   font-size: 1.4rem;
 }
 
-#pic {
-  margin-left: 50%;;
-}
-
 .italics {
   font-style: italic;
 }
@@ -94,14 +90,6 @@ html, body {
   width: 500px;
   height: 387px;
   border-radius: 50%;
-}
-
-.center {
-  position: relative;
-  top: 35%;
-  width: 100%;
-  left: 60%;
-  text-align: center;
 }
 
 /*https://www.w3schools.com/css/css3_transitions.asp*/
@@ -126,7 +114,7 @@ html, body {
   margin: 0;
   padding: 10% 0 20% 35%;
   padding: auto;
-  background-color: var(--test-color2);
+  background-color: var(---darkBlue-text);
 }
 
 #About {
@@ -146,4 +134,8 @@ html, body {
 
 .container {
   display: block;
+}
+
+.card-body {
+  color: var(--darkBlue-text);
 }
