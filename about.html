@@ -11,67 +11,74 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/boilerplate.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
  
-    <div id="NavBar">
-      <a class="logo" rel="index" href="/index.html"> 
-        <img src="img/cory.png" alt="Cory's Personal Logo"> 
-      </a>
-      <nav class="nav-links"> 
-        <a rel="index" href="/index.html" class="link"><i class="icon" >home</i></a> 
-        <a rel="about" href="/about.html" class="link" aria-current="page" ><i class="icon">user-tie</i></a>
-        <a rel="work" href="/work.html" class="link"><i class="icon">lab</i></a>
-        <a rel="contact" href="/contact.html" class="link"><i class="icon">envelop</i></a>
-      </nav>
+  <div id="NavBar">
+    <a class="logo" rel="index" href="/index.html"> 
+      <img src="img/cory.png" alt="Cory's Personal Logo"> 
+    </a>
+    <nav class="nav-links"> 
+      <a rel="index" href="/index.html" class="link"><i class="icon" >home</i></a> 
+      <a rel="about" href="/about.html" class="link" aria-current="page" ><i class="icon">user-tie</i></a>
+      <a rel="work" href="/work.html" class="link"><i class="icon">lab</i></a>
+      <a rel="contact" href="/contact.html" class="link"><i class="icon">envelop</i></a>
+    </nav>
+  </div>
+  <div id="main" role="main">
+    <div class="container">
+      <div class="row align-items-center"
+    <div class="col-sm-6 mx-auto">
+
+          <!-- talk about skills / interest / Programming Languages-->
+          <div id="Languages">
+            <!-- block for code languages -->
+            <p>Languages</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>C#</li>
+              <li>VB</li>
+              <li>TSQL / SQL</li>
+              <li>Python</li>
+              <li>JSON</li>
+              <li>JS</li>
+              <li>Lua</li>
+              <li>PHP</li>
+              <li>Java</li>
+              <li>Relational Databases (MSSQL)</li>
+              <li>GnuGPG (Encryption)</li>
+            </ul>
+          </div>
+          <div id="Tools">
+            <!-- block for code languages -->
+            <p>Frameworks / Tools</p>
+            <ul>
+              <li>Visual Studio 2019</li>
+              <li>.NET</li>
+              <li>Unity Game Engine</li>
+              <li>Git</li>
+              <li>Github</li>
+              <li>REST</li>
+              <li>APIs</li>
+              <li>Automation</li>
+              <li>JQUERY</li>
+              <li>Bootstrap 4</li>
+            </ul>
+          </div>
+          </div>
     </div>
-    <div id="main" style="display: inline-block;">
-
-      <div id="About">
-
-            <!-- talk about skills / interest / Programming Languages-->
-            <div id="Languages">
-              <!-- block for code languages -->
-              <p>Languages</p>
-              <ul>
-                <li>C#</li>
-                <li>Python</li>
-                <li>Lua</li>
-                <li>VB</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>PHP</li>
-                <li>JSON</li>
-                <li>TSQL / SQL</li>
-                <li>Relational Databases (MSSQL)</li>
-                <li>GnuGPG (Encryption)</li>
-              </ul>
-            </div>
-            <div id="Tools">
-              <!-- block for code languages -->
-              <p>Frameworks / Tools</p>
-              <ul>
-                <li>.NET</li>
-                <li>Unity Game Engine</li>
-                <li>Git</li>
-                <li>Github</li>
-                <li>REST</li>
-                <li>APIs</li>
-                <li>Automation</li>
-                <li>JQUERY</li>
-                <li>Bootstrap 4</li>
-              </ul>
-            </div>
-      </div>
-
-    </div>
+    </div>      
+  
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
   </body>
   
   </html>
