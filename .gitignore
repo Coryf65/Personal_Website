@@ -1,8 +1,0 @@
-# Editor settings
-*.vscode
-*.editorconfig
-
-package-lock.json
-
-# Live Serer VSCode add in file
-browserconfig.xml

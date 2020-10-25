@@ -1,8 +1,0 @@
-{
-  "name": "Cory's Development Portfolio",
-  "short_name": "coryf.dev",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "grey",
-  "description": "Cory's Personal Developer Portfolio site. Showcase myself as a Programmer / Developer."
-}
