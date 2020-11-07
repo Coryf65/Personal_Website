@@ -1,5 +1,7 @@
 :root{
     --primary:#455a64;
+    --bg: rgb(0, 11, 54);
+    --deepGrey: #181818;
     --secondary: #80d8ff;
     --secondary-light: #b5ffff;
     --secondary-dark: #49a7cc;
@@ -11,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
+/* setting up basics, like size and colors */
 html, body {
     font-family: Montserrat, sans-serif;
     /*font-family: "Open Sans", sans-serif;*/
@@ -18,6 +21,7 @@ html, body {
     margin: 0;
 }
 
+/* Setting our Text Color */
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--primary-text);
 }
@@ -25,6 +29,7 @@ h1, h2, h3, h4, h5, h6, strong{
 /* no underlines on our links */
 a {
     text-decoration: none;
+    color: var(--primary-text);
 }
 
 /* Setting Sizes */
@@ -35,41 +40,76 @@ h4 { font-size: 24px; }
 h5 { font-size: 20px; }
 h6 { font-size: 16px; }
 
+/* setting CSS Grids */
+.s1 { grid-area: nav; }
+.s2 { grid-area: about; }
+.s3 { grid-area: portfolio; }
+.s4 { grid-area: contact; }
+.s5 { grid-area: footer; }
 
-.s1 {
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="28" height="49" viewBox="0 0 28 49"%3E%3Cg fill-rule="evenodd"%3E%3Cg id="hexagons" fill="%239C92AC" fill-opacity="0.4" fill-rule="nonzero"%3E%3Cpath d="M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+.grid-container {
+    display: grid;
+    grid-template-columns: 120px auto auto;
+    grid-template-areas:
+    'nav about about about about about'
+    'nav portfolio portfolio portfolio portfolio portfolio'
+    'nav contact contact contact contact contact'
+    'nav footer footer footer footer footer';
+    grid-gap: 5px; /* space between Grids */
+    background-color: var(--primary);
+    padding: 5px;
+}
+
+.grid-container > div {
+    background-color: var(--bg);
+    text-align: center;
+    padding: 200px 0;
+    font-size: 20px;
+}
+
+.s1 {  
+    /*background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="28" height="49" viewBox="0 0 28 49"%3E%3Cg fill-rule="evenodd"%3E%3Cg id="hexagons" fill="%239C92AC" fill-opacity="0.4" fill-rule="nonzero"%3E%3Cpath d="M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');*/
     background-color: var(--background);
     border-bottom: 1px solid var(--secondary-light);
-    overflow: auto;
+    border: 2px solid red;
 }
 
-.s2 {
-    background-color: var(--background);
+.s2 {    
+    /* background-color: var(--secondary-dark); */
     border-bottom: 1px solid var(--secondary-light);
-    overflow: auto;
+    border: 2px solid rgb(229, 255, 0);
 }
 
-.greeting-wrapper {
-    display: grid; /*setting up the css grid*/
-    justify-content: center; /*Horizontal*/
-    align-content: center; /*Vertical*/
-    min-height: 15em;
+/* Nav Links */
+.nav-wrapper > a {
+    display: block;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid rgb(91, 27, 121);
 }
 
-.nav-wrapper {
-    background-color: var(--secondary);
-    
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
 }
 
+/* Media Queries */
 
-.main-container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
+/* Medium */
 @media screen and (max-width: 1200px) {
 
-    .main-container {
-        width: 95%;
+    .grid-container {
+        width: 100%;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 320px) {
+
+    /* move nav create hiding */
+    .grid-container {
+        width: 100%;
     }
 }
