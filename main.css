@@ -1,37 +1,42 @@
 :root{
-    --primary:#04374e;
-    --bg: rgb(49, 54, 75);
-    --deepGrey: #181818;
-    --secondary: #80d8ff;
-    --secondary-light: #b5ffff;
-    --secondary-dark: #a5ddf3;
-    --background: #E1E2E1;
-    --primary-text: #fff;
-    --scondary-text: #000;
+    --primary: rgb(239, 241, 243);
+    --secondary: rgb(0, 159, 183);
+    --accent-1: rgb(245, 215, 102);
+    --accent-2: rgb(105, 103, 115);
+    --dark-text: rgb(0, 0, 0);
+    --light-text: rgb(255, 255, 255);
+
+    /* Colors from color palette */
+    --eerieBlack: rgb(39, 39, 39); /*white text*/
+    --orangeYellow: rgb(245, 215, 102); /*black text*/
+    --blueMunsell: rgb(0, 159, 183); /*white text*/
+    --dimGrey: rgb(105, 103, 115); /*white text*/
+    --offWhite: rgb(239, 241, 243); /*black text*/
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
+* { z-index: 2; }
+
 /* setting up basics, like size and colors */
 html, body {
-    /*font-family: "Open Sans", sans-serif;*/
     font-family: Montserrat, sans-serif;
     font-kerning: auto;
-    color: var(--primary-text);
+    color: var(--dark-text);
     padding: 0;
     margin: 0;
 }
 
 /* Setting our Text Color */
 h1, h2, h3, h4, h5, h6, strong{
-    color: var(--primary-text);
+    color: var(--dark-text);
 }
 
 /* no underlines on our links */
 a {
     text-decoration: none;
-    color: var(--primary-text);
+    color: var(--dark-text);
 }
 
 /* Setting Sizes */
@@ -62,7 +67,6 @@ p { padding: 20px; }
     'nav footer footer footer footer footer';
     grid-gap: 5px; /* space between Grids */
     background-color: var(--primary);
-    padding: 5px;
 }
 
 .grid-container > div {
@@ -72,15 +76,13 @@ p { padding: 20px; }
 
 /*background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="28" height="49" viewBox="0 0 28 49"%3E%3Cg fill-rule="evenodd"%3E%3Cg id="hexagons" fill="%239C92AC" fill-opacity="0.4" fill-rule="nonzero"%3E%3Cpath d="M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');*/
 .s1 {
-    background-color:var(--bg);
-    border: 2px solid rgb(255, 0, 0);
+    background-color:var(--accent-2);
 }
 
 .s2 {
     height: 100vh;
     padding-top: 20%;
-    border-bottom: 1px solid var(--secondary-light);
-    border: 2px solid rgb(229, 255, 0);
+    border: 2px solid rgb(229, 255, 0);    
 }
 
 .s3 {
@@ -101,15 +103,14 @@ p { padding: 20px; }
 /* Nav Links */
 .nav-wrapper > a {
     display: block;
-    margin-top: 50px;
-    margin-left: 15px;;
     padding: 10px;
+    margin: 40px 10px 0 10px;
     border: 2px solid rgb(91, 27, 121);
 }
 
 .centerNav {
     position: fixed;
-    top: 50%;
+    top: 49%;
     left: 0%;
     transform: translate(0%, -50%);
 }
@@ -120,14 +121,14 @@ p { padding: 20px; }
     margin: 20px;
     padding: 10px 40px;
     color: var(--secondary);
-    border: 2px solid var(--secondary-dark);
+    border: 2px solid var(--secondary);
 }
 
-    .btn:hover {
+    .btn::hover {
         background-color: #22495c;
     }
 
-    .button:active {
+    .button::active {
         box-shadow: 0 5px #666;
         transform: translate(10px, 10px);
     }
@@ -135,6 +136,38 @@ p { padding: 20px; }
 .card {
     padding: 20px;
     border: 2px solid #b5ffff;
+}
+
+/* background shapes */
+.triangle-1 {
+    position: absolute;
+    top: 0;
+    border-left: 900px solid var(--accent-1);
+    border-right: 800px solid transparent;
+    border-bottom: 800px solid transparent;
+    border-top: 800px solid transparent;
+}
+
+.triangle-2 {
+    position: absolute;
+    right: 0px;
+    height: 0;
+    width: 0;
+    border-left: 900px solid var(--accent-1);
+    border-right: 800px solid transparent;
+    border-bottom: 800px solid transparent;
+    border-top: 800px solid transparent;
+}
+
+/* .shape {
+    width: 100%;
+    height: 100%;
+    background-color: var(--blueMunsell);
+    clip-path: polygon(100% 51%, 0 0, 0 100%);
+} */
+
+#Background-Shapes {
+    z-index: 0;
 }
 
 /* Helpers */
