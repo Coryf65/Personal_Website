@@ -102,6 +102,7 @@ p { padding: 20px; }
 /* Footer */
 .s5 {
     border: 2px solid rgb(255, 123, 0);
+    overflow: hidden;
 }
 
 /* Nav */
@@ -132,10 +133,13 @@ p { padding: 20px; }
 
 .card {
     padding: 10px;
+    border: 3px solid var(--secondary);
 }
 
 .card > img {
     width: max-content;
+    max-width: 50%;
+    box-shadow: 0 30px 50px -20px rgba(0, 0, 0);
 }
 
 
@@ -176,6 +180,7 @@ p { padding: 20px; }
     border-right: 200px solid transparent;
     border-bottom: 200px solid transparent;
     border-top: 500px solid transparent;
+    
 }
 
 /* .shape {
@@ -199,18 +204,47 @@ p { padding: 20px; }
 /* Media Queries */
 
 /* Medium */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 2000px) {
 
     .grid-container {
-        width: 100%;
+        grid-template-columns: 120px auto;
+        grid-template-areas:
+        'nav about about'
+        'nav portfolio portfolio'
+        'nav contact contact'
+        'nav footer footer';
+    }
+
+    .card-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
     }
 }
 
 /* Small */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1500px) {
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2; }
+    h4 { font-size: 1rem; }
+    h5 { font-size: 1.5rem; }
+    h6 { font-size: 1rem; }
+    p { padding: 20px; }
 
     /* move nav create hiding */
     .grid-container {
-        width: 100%;
+        grid-template-columns: 120px auto;
+        grid-template-areas:
+        'nav about'
+        'nav portfolio'
+        'nav contact'
+        'nav footer';
     }
+
+    .card-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
 }
