@@ -1,7 +1,20 @@
 # Personal_Website
-🚧 [Under construction] My Portfolio Website
 
+🚧 [Under construction]
 
-## Creating My Portfolio Site
+## My inspirations
 
-1. Goal to show off cool things I am working on !
+- Caitlin Floyd: [Caitlin Floyd's Portfolio site](https://caitlinfloyd.com/)
+- Jacek Jeznach: [Jacek Jeznach's Portfolio site](https://jacekjeznach.com/)
+
+## Stack
+
+- HTML
+- CSS
+- JS (Vanilla)
+- NGIX
+
+## Extra details
+
+- Animate CSS
+- CSS Grid
