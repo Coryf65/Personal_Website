@@ -19,39 +19,79 @@
 
             <div id="Nav" class="s1">
                 <div class="nav-wrapper centerNav">
-                    <a id="Home" href="#">Home</a>
-                    <a id="About" href="#">About</a>
-                    <a id="Portfolio" href="#">Portfolio</a>
-                    <a id="Contact" href="#">Contact</a>
+                    <a id="About" class="button-small" href="#">About</a>
+                    <a id="Portfolio" class="button-small" href="#">Portfolio</a>
+                    <a id="Contact" class="button-small" href="#">Contact</a>
                 </div>
             </div>
             
             <div id="About" class="s2">    
                 <h1>Hey, I'm Cory Fabian</h1>
                 <p class="small-cursive">Software Engineer, Lifetime Learner, and aspiring Game Dev</p>
-                <a class="github-link" href="https://github.com/Coryf65" >
+                <a class="github-link" href="https://github.com/Coryf65" target="_blank" >
                     <img src="/_images/GitHub-Mark-32px.png" alt="Link to my personal Github Profile, coryf65" />
                 </a>
-                <a class="linkedin-link" href="https://www.linkedin.com/in/cory-fabian/">
+                <a class="linkedin-link" href="https://www.linkedin.com/in/cory-fabian/" target="_blank" >
                     <img src="/_images/LI-In-Bug.png" width="34px" height="32px" alt="Link to my personal linkedin Profile, cory-fabian" />
                 </a>
             </div>
 
             <div id="Portfolio" class="s3">
-                 
+                <div class="container">
                 <h2>Portfolio</h2>
+                </div>
                 
                 <div class="card-container">
-                    <div class="card">
-                        <h3 class="card-title">Some Project 1</h3>
-                        <img src="https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1010&q=80" alt="" />
-                        <p>some description</p>
+                    <div class="card">                        
+                        <h3 class="card-title">Tower Builder Game</h3>
+                        <img src="/_images/project_images/TowerBuilderGame_Ingame.png" alt="Image of Tower Builder, a game that I made." />
+                        
+                        <div style="margin: 20px;">
+                            <a class="button code" href="https://github.com/Coryf65" target="_blank" >
+                                Source Code
+                                <img src="/_images/GitHub-Mark-32px.png" alt="Link to my personal Github Profile, coryf65" />
+                            </a>
+                            <a class="button site" href="https://mods.factorio.com/mod/SquidInk" target="_blank" >
+                                Live Game Demo
+                                <img src="/_images/project_images/factorio-logo-gear.png" alt="Link a live game demo on my website." />
+                            </a>
+                        </div>
+                        <p>2D tower builder game that I made in Unity Game Engine.</p>
+                        <p>Tools and Techniques</p>
+                        <ul>
+                            <li>C# and .Net</li>
+                            <li>Unity Game Engine</li>
+                            <li>Tilemaps</li>
+                            <li>Persistent Settings, using Scriptable Objects</li>
+                            <li>Custom Shaders</li>
+                            <li>Sounds and Effects</li>
+                            <li>Ai Path Finding, Enemies Search nearest Targets not Destroyed</li>
+                        </ul>
                     </div>
 
                     <div class="card">
-                        <h3 class="card-title">Some Project 2</h3>
-                        <img src="https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1010&q=80" alt="" />
-                        <p>some description</p>
+                        <h3 class="card-title">Squid Ink</h3>                        
+                        <img src="/_images/project_images/Factorio_SquidInkMod.png" alt="Image of Squid Ink, a Factorio game Mod I created." />
+
+                        <div style="margin: 20px;">
+                            <a class="button code" href="https://github.com/Coryf65/SquidInk" target="_blank" >
+                                Source Code
+                                <img src="/_images/GitHub-Mark-32px.png" alt="Link to the Source Code for SquidInk Mod" />
+                            </a>
+                            <a class="button site" href="https://mods.factorio.com/mod/SquidInk" target="_blank" >
+                                Factorio Mod Portal
+                                <img src="/_images/project_images/factorio-logo-gear.png" alt="Link to my SquidInk Mod on the Mod Portal" />
+                            </a>
+                        </div>
+                        
+                        <p>Game mod I created for Factorio!</p>
+                        <p>Tools and Techniques</p>
+                        <ul>
+                            <li>Lua</li>
+                            <li>Custom Art</li>
+                            <li>New feature enhancements</li>
+                            <li>New Research Path and advancements</li>
+                        </ul>
                     </div>
 
                     <div class="card">
