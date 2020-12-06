@@ -43,13 +43,12 @@ a {
 }
 
 /* Setting Sizes */
-h1 { font-size: 4rem; }
-h2 { font-size: 3.5rem; }
-h3 { font-size: 3.2; }
+h1 { font-size: 5rem; }
+h2 { font-size: 4.5rem; }
+h3 { font-size: 4.5; }
 h4 { font-size: 3rem; }
 h5 { font-size: 2.5rem; }
 h6 { font-size: 2rem; }
-p { padding: 20px; }
 
 /* setting CSS Grids */
 .s1 { grid-area: nav; }
@@ -86,14 +85,12 @@ p { padding: 20px; }
 /* About */
 .s2 {
     height: 100vh;
-    padding-top: 20%;
-    border: 2px solid rgb(229, 255, 0);    
+    margin-top: 20%;
 }
 
 /* Portfolio */
 .s3 {
     padding: 50px 0;
-    border: 2px solid rgb(255, 0, 179);
 }
 
 /* Contact */
@@ -118,28 +115,43 @@ p { padding: 20px; }
 /* ---------- Cards ---------- */
 
 .card {
-    padding: 10px;
-    margin: 20px;
     background-color: var(--card);
     border: 3px solid rgb(0, 98, 122);
 }
 .card-container {
+    margin: 20px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
+    grid-gap: 10px 10px;
 }
 
 .card-title {
-
+    color: var(--eerieBlack);
+    font-size: 40px;
+    font-weight: 800;
+    font-style: oblique;
+    text-shadow: 2px 2px 3px var(--primary);
 }
 
 .card > img {
     margin: 10px;
-    width: 90%;
     height: 60%;
     max-width: 80%;
     max-height: 80%;
     box-shadow: 0 30px 50px -20px rgba(0, 0, 0);
+}
+
+.card-body {
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 5px;
+}
+
+.card-body > p:first-child {
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: solid 1px var(--dimGrey);
 }
 
 .button {
@@ -168,6 +180,12 @@ p { padding: 20px; }
 }
 
 /* ---------- custom elements ---------- */
+
+ul li {
+    background: rgba(210, 228, 250, 0.7);
+    margin: 5px;
+    text-align: left;
+  }
 
 .button-small {
     display: block;
