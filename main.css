@@ -4,7 +4,8 @@
     --accent-1: rgba(219, 174, 11, 0.6);
     --accent-1-dark: rgba(233, 182, 0, 0.6);
     --accent-2: rgb(68, 68, 68);
-    --card: rgba(46, 208, 248, 0.8);
+    --accent-3: rgb(231, 227, 3);
+    --card: rgba(57, 73, 126, 0.979);
     --dark-text: rgb(0, 0, 0);
     --light-text: rgb(255, 255, 255);
 
@@ -65,7 +66,6 @@ h6 { font-size: 2rem; }
     'nav portfolio portfolio portfolio portfolio portfolio'
     'nav contact contact contact contact contact'
     'nav footer footer footer footer footer';
-    grid-gap: 5px; /* space between Grids */
     background-color: var(--primary);
 }
 
@@ -95,12 +95,10 @@ h6 { font-size: 2rem; }
 
 /* Contact */
 .s4 {
-    border: 2px solid rgb(123, 255, 173);
 }
 
 /* Footer */
 .s5 {
-    border: 2px solid rgb(255, 123, 0);
     overflow: hidden;
 }
 
@@ -127,11 +125,11 @@ h6 { font-size: 2rem; }
 }
 
 .card-title {
-    color: var(--eerieBlack);
+    color: var(--primary);
     font-size: 40px;
     font-weight: 800;
     font-style: oblique;
-    text-shadow: 2px 2px 3px var(--primary);
+    text-shadow: 2px 2px 3px var(--eerieBlack);
 }
 
 .card > img {
@@ -179,13 +177,53 @@ h6 { font-size: 2rem; }
     width: 32px;
 }
 
+/* ---------- Contact Form ---------- */
+
+/* container */
+.form-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+    max-width: 50%;
+    padding: 20px 0;
+    margin: auto auto 0 auto;
+}
+
+#Contact-Form {
+    background-color: rgb(92, 92, 92);
+    color: var(--primary);
+}
+
+#Contact-Form > h2 {
+    color: var(--primary);
+    text-shadow: 2px 2px 3px var(--eerieBlack);
+}
+
+label {
+    grid-row: auto;
+    grid-column: 1 / 2;
+}
+ 
+input, button {
+    grid-column: 2 / 3;
+    max-width: 200px;
+}
+
+/* ---------- Footer ---------- */
+
+#Footer {
+    content: ' ';
+    border-top: 100px solid var(--orangeYellow);
+    border-right: 200px solid transparent;
+  }
+
 /* ---------- custom elements ---------- */
 
 ul li {
     background: rgba(210, 228, 250, 0.7);
     margin: 5px;
     text-align: left;
-  }
+}
 
 .button-small {
     display: block;
