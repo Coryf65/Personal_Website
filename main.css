@@ -212,9 +212,7 @@ input, button {
 /* ---------- Footer ---------- */
 
 #Footer {
-    content: ' ';
     border-top: 100px solid var(--orangeYellow);
-    border-right: 200px solid transparent;
   }
 
 /* ---------- custom elements ---------- */
